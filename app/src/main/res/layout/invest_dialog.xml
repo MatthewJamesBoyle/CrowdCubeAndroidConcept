@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/popup_image_view"
+        android:src="@drawable/crowdcube_logo"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/company_name_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:text="Matts company"
+        android:layout_toRightOf="@id/popup_image_view"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Confirm your Investment"
+        android:layout_below="@id/popup_image_view"
+
+        />
+
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:bootstrapSize="lg"
+        app:bootstrapBrand="success"
+        android:layout_below="@id/text"
+        android:id="@+id/editText"
+        android:inputType="number"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/button_pay"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/editText"
+        app:bootstrapBrand="success"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:text="Invest With Card"/>
+
+
+
+
+</RelativeLayout>
